@@ -30,4 +30,4 @@ app.get( '/', ( req, res ) => {
   res.render( 'main.pug', info, { responses: responses } );
 } );
 
-app.listen( 8082, () => console.log( 'Example app listening on port 8082!' ) );
+app.listen( process.env.PORT || 8082, () => console.log( 'Example app listening on port 8082!' ) );
